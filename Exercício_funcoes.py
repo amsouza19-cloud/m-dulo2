@@ -1,6 +1,7 @@
 1.
-def saldação ()
-print ("Olá Mundo, bem vindo ao Python!")
+def saldacao():
+    print("Olá Mundo, bem vindo ao Python!")
+saldacao() 
 
 2.
 def dobro (número):
@@ -11,25 +12,28 @@ def dobro (número):
 
 3.
 def soma (a, b):
-return  a + b
+    return  a + b
+
     print (soma (8, 8))
 
 4.
-def mensagem ("nome = visitante"):
+def mensagem (nome = "visitante"):
     print (f"olá, {nome}!")
     mensagem ("joão")
     mensagem()
 
 5.
-def operações (a, b):
+def operacoes (a, b):
     soma = a + b
-    subitração = a - b
-    multiplicação = a * b
-    return, soma, subitração, multiplicação
-    resultado igual operações (9, 5)
+    subitracao = a - b
+    multiplicacao = a * b
+    return soma, subitracao, multiplicacao
+
+    resultado = operacoes (9, 5)
+
     print ("soma:", resultado [0])
-    print ("subitração:", resultado [1])
-    print ("multiplicação:", resultado[2])
+    print ("subitracao:", resultado [1])
+    print ("multiplicacao:", resultado[2])
 
 6.
 def media (*números):
@@ -57,12 +61,14 @@ def calculadora():
     b = float(input("Digite o segundo número:"))
 
     if op == '+':
-        print("resultado:", soma (a, b))
+        resultado = a + b
     elif op == '-':
-        print("Resultado:", subtrair(a,b))
+        Resultado = a - b
     elif op == '*':
-        print("Resultado:", multiplicar(a,b))
-    else op == '/':
+        Resultado = a * b
+    elif op == '/':
+        Resultado = a / b
+    else:
         print("Operação Inválida.")
     calcular ()
 
